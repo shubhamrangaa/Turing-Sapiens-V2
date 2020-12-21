@@ -2,24 +2,27 @@ import React from "react"
 import '../styles/style.scss'
 import '../styles/navbar.scss'
 
+
 // DARK MODE LOGIC
 
 if(typeof document !== 'undefined'){
-
   const togglebtn = document.getElementById('dark-toggle');
   const body = document.body;
   
-  togglebtn.onclick = () => {
-      body.classList.toggle('light');
-      body.classList.toggle('dark');
-      if(body.classList == 'light'){
-        console.log('hello');
-        togglebtn.style.filter = "grayscale(0)";
-      }
-      else{
-        togglebtn.style.filter = "grayscale(100)";
-      }
-  };
+  body.classList.add('dark');
+  if(typeof document !== 'undefined'){
+    // togglebtn.onclick = () => {
+    //     body.classList.toggle('light');
+    //     body.classList.toggle('dark');
+    //     if(body.classList === 'light'){
+    //       console.log('hello');
+    //       togglebtn.style.filter = "grayscale(0)";
+    //     }
+    //     else{
+    //       togglebtn.style.filter = "grayscale(100)";
+    //     }
+    // };
+  }
 }
 
 

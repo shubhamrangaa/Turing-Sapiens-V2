@@ -1,5 +1,7 @@
 import React from "react"
 import '../styles/style.scss'
+import '../styles/landing.scss'
+
 const landingStyles = {
     height: "100vh",
     display: "flex",
@@ -10,9 +12,11 @@ const landingStyles = {
 
 const Landing = function Landing(props) {
     return (
-        <section style={landingStyles}>
+        <section id="landing" style={landingStyles}>
+            <header>
             <h1>{props.name}</h1>
-            <button>{props.prompt}</button>
+            <a className="join-us" href={props.address}>{props.prompt}</a>
+            </header>
         </section>
     )
 }

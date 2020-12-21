@@ -1,9 +1,8 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import Landing from "../components/landing"
-import Navbar from "../components/navbar"
-import Footer from "../components/footer"
-
+import Navbar from "../components/navbar" 
+import Footer from "../components/footer" 
 // styles
 
 // markup
@@ -17,10 +16,9 @@ const IndexPage = () => {
         </Helmet>
       </div>
       <Navbar />
-      <Landing name="Turing Sapiens" prompt="Join Us" address="./" />
+      <Landing name="About Us"  />
       <Footer />
     </main>
-
   );
 };
 

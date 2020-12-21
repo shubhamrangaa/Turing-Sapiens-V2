@@ -1,0 +1,20 @@
+// LANDING BEGINS
+#landing{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        a{
+            width: fit-content;
+            margin: 0 auto;
+        }
+    }
+}
+
+// LANDING ENDS
