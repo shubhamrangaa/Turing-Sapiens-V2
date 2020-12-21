@@ -1,10 +1,11 @@
 import React from "react"
-
+import '../styles/style.scss'
 const landingStyles = {
     height: "100vh",
     display: "flex",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    
 }
 
 const Landing = function Landing(props) {
@@ -17,3 +18,5 @@ const Landing = function Landing(props) {
 }
 
 export default Landing
+
+

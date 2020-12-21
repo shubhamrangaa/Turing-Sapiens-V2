@@ -1,0 +1,162 @@
+// COLOR PALETTE
+
+$primary-dark: #060606;
+$secondary-dark: #1f1f1f;
+$primary-light: #fff;
+$secondary-light: #ececec;
+$grey-light: #BFBFBF;
+$grey-dark: #2D2C2C;
+$footer-blue: #13141D;
+
+
+// ELEMENT VARIABLES
+.light{
+   
+    --bg: #{$primary-light};
+    --text-grey: #{$grey-dark};
+    --text-dark: #{$primary-dark};
+    --bg-secondary: #{$secondary-light};
+    --swiper-theme-color: rgb(0, 0, 0) !important;
+}
+
+.dark{
+    --bg-secondary: #{$secondary-dark};
+    --bg: #{$primary-dark};
+    --text-grey: #{$grey-light};
+    --text-dark: #{$primary-light};
+    --swiper-theme-color: #fff !important;
+}
+
+// BASIC CSS
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}  
+
+body{
+    font-family: 'Poppins', 'Open Sans', 'Inconsolata';
+    background: var(--bg);
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+
+a{  
+    font-family: 'Inconsolata';
+    color: currentColor;
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins';
+    color: var(--text-dark);
+}
+
+h1{
+    font-size: 4rem;
+    width: fit-content;
+    background: linear-gradient(89.71deg, #FFCD5A 2.24%, #FF4D4D 39.97%, #9360FF 91.68%);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 2rem;
+    @media only screen and (max-width: 525px){
+        font-size: 2.8rem;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+h2{
+    font-size: 2.25rem;
+    width: fit-content;
+    background: linear-gradient(89.71deg, #FFCD5A 2.24%, #FF4D4D 39.97%, #9360FF 91.68%);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @media only screen and (max-width: 500px){
+        font-size: 1.8rem;
+    }
+}
+
+h3{
+    font-size: 1.8rem;
+    @media only screen and (max-width: 500px){
+        font-size: 1.45rem;
+    }
+}
+h4{
+    font-size: 1.5rem;
+    @media only screen and (max-width: 500px){
+        font-size: 1.45rem;
+    }
+}
+
+small{
+    font-family: 'Inconsolata';
+    color: var(--text-dark);
+    font-size: 1.5rem;
+    font-weight: 400;
+
+@media only screen and (max-width: 500px){
+    font-size: 1.125rem;
+}
+}
+h5{
+    font-family: 'Inconsolata';
+    color: var(--text-dark);
+    font-size: 1.5rem;
+    font-weight: 400;
+
+@media only screen and (max-width: 500px){
+    font-size: 1.125rem;
+}
+}
+
+p{
+    font-family: 'Open Sans';
+    font-size: 1.125rem;
+    color: var(--text-grey);
+    @media only screen and (max-width: 500px){
+        font-size: 1rem;
+    }
+}
+
+// BUTTON STYLES
+.join-us{
+    font-family: 'Inconsolata';
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background: $primary-dark;
+    border: 1.5px solid $primary-light;
+    border-radius: .35rem;
+    padding: .5rem 2rem;
+    color: $primary-light;
+}
+
+.fill{
+    font-family: 'Inconsolata';
+    font-size: 1.5rem;
+    font-weight: 400;
+    background: $primary-light;
+    border: 1.5px solid $primary-dark;
+    border-radius: .35rem;
+    padding: .5rem 2rem;
+    color: $primary-dark;
+}
+
+#dark-toggle{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    filter: grayscale(100);
+}
