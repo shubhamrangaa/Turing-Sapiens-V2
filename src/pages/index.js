@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import Landing from "../components/landing"
 import Navbar from "../components/navbar"
 import Footer from "../components/footer"
-
+import Events from "../components/events"
 // styles
 
 // markup
@@ -18,6 +18,7 @@ const IndexPage = () => {
       </div>
       <Navbar />
       <Landing name="Turing Sapiens" prompt="Join Us" address="./" />
+      <Events img="./images/icon.png" heading="General Body Meeting" date="23rd December, 2020" />
       <Footer />
     </main>
 

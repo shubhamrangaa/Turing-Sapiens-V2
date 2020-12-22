@@ -1,0 +1,12 @@
+
+#faq{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    article{
+        margin-bottom: 5rem;
+        padding: 1rem;
+    }
+}
